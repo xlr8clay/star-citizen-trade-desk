@@ -1,0 +1,19 @@
+{
+  "name": "star-citizen-trade-desk",
+  "version": "1.0.0",
+  "description": "Marketplace for Star Citizen ships and items — trade for USD or aUEC",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "better-sqlite3": "11.7.0",
+    "bcrypt": "5.1.1",
+    "jsonwebtoken": "9.0.2",
+    "multer": "1.4.5-lts.1",
+    "cookie-parser": "1.4.7",
+    "dotenv": "16.4.7"
+  }
+}

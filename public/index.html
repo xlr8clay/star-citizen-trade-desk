@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Citizen Trade Desk</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="#/" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">STAR CITIZEN TRADE DESK</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="#/" class="nav-link">Browse</a>
+        <a href="#/sell" class="nav-link auth-only" style="display:none">Sell</a>
+        <a href="#/my-listings" class="nav-link auth-only" style="display:none">My Listings</a>
+        <a href="#/messages" class="nav-link auth-only" style="display:none">Messages <span class="badge" id="msg-badge" style="display:none">0</span></a>
+      </nav>
+      <div class="header-actions">
+        <div class="guest-only">
+          <a href="#/login" class="btn btn-outline btn-sm">Log In</a>
+          <a href="#/register" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+        <div class="auth-only" style="display:none">
+          <span class="user-greeting" id="user-greeting"></span>
+          <button class="btn btn-outline btn-sm" id="logout-btn">Log Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="app">
+    <!-- SPA content renders here -->
+  </main>
+
+  <footer class="footer">
+    <p>Star Citizen Trade Desk &mdash; Player-to-player marketplace</p>
+    <p class="footer-note">Not affiliated with Cloud Imperium Games. Star Citizen&reg; is a trademark of Cloud Imperium Games.</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
